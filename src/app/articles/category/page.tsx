@@ -84,7 +84,7 @@ export default function CategoryPage() {
           <h1 className="text-3xl font-bold uppercase mt-2 tracking-wide">{gState.categoryPage.value.categoryName}</h1>
 
           <div className="absolute bottom-0 inset-x-0">
-            <div className="text-8xl tracking-widest opacity-[0.01]">CATEGORY</div>
+            <div className="text-8xl tracking-widest opacity-[0.02] select-none">CATEGORY</div>
           </div>
         </div>
       </div>

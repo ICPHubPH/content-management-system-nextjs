@@ -100,9 +100,7 @@ export default function ArticlesPage() {
                                 <Jdenticon size="48" value={article.authorId} />
                               </AvatarFallback>
                             </Avatar>
-                            <div className="font-medium">
-                              {gState.users.value.find((u) => u.id === article.authorId)?.name}
-                            </div>
+                            <div className="font-medium">{article.authorName}</div>
                           </div>
 
                           {/* Title */}
@@ -202,9 +200,7 @@ export default function ArticlesPage() {
                       <Jdenticon size="48" value={gStateP['article'].value.authorId} />
                     </AvatarFallback>
                   </Avatar>
-                  <div className="font-medium text-lg">
-                    {gState.users.value.find((u) => u.id === gStateP['article'].value.authorId)?.name}
-                  </div>
+                  <div className="font-medium text-lg">{gStateP['article'].value.authorName}</div>
                 </div>
 
                 {/* Content */}

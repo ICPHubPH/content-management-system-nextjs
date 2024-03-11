@@ -27,15 +27,15 @@ export default function usePublic() {
     const loadCategoriesAndArticles = async () => {
       if (!actor) return;
 
-      const users = await actor.getUsers();
-      gState.users.set(
-        users.Ok.map((v) => ({
-          ...v,
-          id: v.id.toString(),
-          createdAt: (parseInt(v.createdAt) / 1000000).toString(),
-          updatedAt: (parseInt(v.updatedAt) / 1000000).toString(),
-        })) || [],
-      );
+      // const users = await actor.getUsers();
+      // gState.users.set(
+      //   users.Ok.map((v) => ({
+      //     ...v,
+      //     id: v.id.toString(),
+      //     createdAt: (parseInt(v.createdAt) / 1000000).toString(),
+      //     updatedAt: (parseInt(v.updatedAt) / 1000000).toString(),
+      //   })) || [],
+      // );
 
       const activeArticles = await getActiveArticles();
       const categories = await getAllCategories();

@@ -32,15 +32,15 @@ export default function CategoryPage() {
   const onLoad = async () => {
     if (!actor) return;
 
-    const users = await actor.getUsers();
-    gState.users.set(
-      users.Ok.map((v) => ({
-        ...v,
-        id: v.id.toString(),
-        createdAt: (parseInt(v.createdAt) / 1000000).toString(),
-        updatedAt: (parseInt(v.updatedAt) / 1000000).toString(),
-      })) || [],
-    );
+    // const users = await actor.getUsers();
+    // gState.users.set(
+    //   users.Ok.map((v) => ({
+    //     ...v,
+    //     id: v.id.toString(),
+    //     createdAt: (parseInt(v.createdAt) / 1000000).toString(),
+    //     updatedAt: (parseInt(v.updatedAt) / 1000000).toString(),
+    //   })) || [],
+    // );
 
     const categories = await actor.getAllCategories();
     const activeArticles: any = await actor.getActiveArticles();
@@ -111,7 +111,7 @@ export default function CategoryPage() {
                         <Jdenticon size="48" value={article.authorId} />
                       </AvatarFallback>
                     </Avatar>
-                    <div className="font-medium">{gState.users.value.find((u) => u.id === article.authorId)?.name}</div>
+                    <div className="font-medium">{article.authorName}</div>
                   </div>
 
                   {/* Title */}

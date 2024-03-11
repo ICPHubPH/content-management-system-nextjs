@@ -25,6 +25,7 @@ export interface _SERVICE {
           authorId: string;
           date: bigint;
           createdAt: bigint;
+          authorName: string;
           description: string;
           updatedAt: bigint;
           editorId: string;
@@ -84,6 +85,7 @@ export interface _SERVICE {
           authorId: string;
           date: bigint;
           createdAt: bigint;
+          authorName: string;
           description: string;
           updatedAt: bigint;
           editorId: string;
@@ -110,6 +112,7 @@ export interface _SERVICE {
           authorId: string;
           date: bigint;
           createdAt: bigint;
+          authorName: string;
           description: string;
           updatedAt: bigint;
           editorId: string;
@@ -136,6 +139,7 @@ export interface _SERVICE {
           authorId: string;
           date: bigint;
           createdAt: bigint;
+          authorName: string;
           description: string;
           updatedAt: bigint;
           editorId: string;
@@ -162,6 +166,7 @@ export interface _SERVICE {
           authorId: string;
           date: bigint;
           createdAt: bigint;
+          authorName: string;
           description: string;
           updatedAt: bigint;
           editorId: string;
@@ -200,6 +205,7 @@ export interface _SERVICE {
           authorId: string;
           date: bigint;
           createdAt: bigint;
+          authorName: string;
           description: string;
           updatedAt: bigint;
           editorId: string;
@@ -226,6 +232,7 @@ export interface _SERVICE {
           authorId: string;
           date: bigint;
           createdAt: bigint;
+          authorName: string;
           description: string;
           updatedAt: bigint;
           editorId: string;
@@ -252,6 +259,7 @@ export interface _SERVICE {
           authorId: string;
           date: bigint;
           createdAt: bigint;
+          authorName: string;
           description: string;
           updatedAt: bigint;
           editorId: string;
@@ -342,6 +350,7 @@ export interface _SERVICE {
           authorId: string;
           date: bigint;
           createdAt: bigint;
+          authorName: string;
           description: string;
           updatedAt: bigint;
           editorId: string;

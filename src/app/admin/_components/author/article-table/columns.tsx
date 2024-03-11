@@ -59,6 +59,15 @@ export const columns = (state = null, fn = null) => [
   //   },
   // },
   {
+    id: 'author',
+    header: ({ column }) => <DataTableColumnHeader column={column} title="Author" />,
+    accessorFn: (row) => `${row.authorName}`,
+    cell: ({ row }) => {
+      const data = row.original;
+      return <div className="min-w-[10rem]">{data.authorName}</div>;
+    },
+  },
+  {
     id: 'author_id',
     header: ({ column }) => <DataTableColumnHeader column={column} title="Author ID" />,
     accessorFn: (row) => `${row.authorId}`,

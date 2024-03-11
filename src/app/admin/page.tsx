@@ -17,7 +17,7 @@ const Admin: NextPage = () => {
 
   return (
     <div>
-      <section className="bg-[#111111] flex flex-col md:min-h-[60vh] overflow-hidden py-10">
+      <section className="flex flex-col md:min-h-[60vh] overflow-hidden py-10">
         <div className="container flex flex-1 flex-col gap-4 justify-center">
           {!gState.identity && (
             <button

@@ -25,7 +25,7 @@ export default function Navbar() {
   }, [gState.ui.mobileMenu]);
 
   return (
-    <div className="top-0 z-10 py-2 font-kodchasan sticky bg-transparent">
+    <div className="top-0 z-10 py-2 font-kodchasan sticky bg-black">
       <div className="container">
         <div className="flex items-center justify-between">
           <div>

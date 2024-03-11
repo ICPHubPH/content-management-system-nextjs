@@ -45,10 +45,10 @@ export default function ArticlesPage() {
   }, [id, actor]);
 
   return (
-    <main className="overflow-hidden scroll-smooth bg-black">
+    <main className="scroll-smooth bg-black min-h-screen flex flex-col">
       <Navbar />
 
-      <section className="min-h-[calc(100vh-96px)] bg-gray-200">
+      <section className="flex-1 bg-gray-200">
         <div className="container py-14">
           {/* Blank State */}
           {!id && gState.categories.length === 0 && (
@@ -220,6 +220,7 @@ export default function ArticlesPage() {
           )}
         </div>
       </section>
+
       <Footer />
     </main>
   );
